@@ -2,7 +2,7 @@
 <br>
     <head>
         <title>Digifarm - Status</title>
-		<link rel="icon" href="LOGO-removebg.png">
+		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="farmer.css">
 		<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap" rel="stylesheet">
@@ -97,6 +97,30 @@
 		"inputs": [
 			{
 				"internalType": "int256",
+				"name": "checkval",
+				"type": "int256"
+			},
+			{
+				"internalType": "string",
+				"name": "newstatus",
+				"type": "string"
+			}
+		],
+		"name": "addstatus",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "int256",
 				"name": "aadharNo",
 				"type": "int256"
 			}
@@ -152,7 +176,7 @@
 		"type": "function"
 	}
 ];
-                    const address = "0xf94FE507f83197917E16805da456C38Bc8d4B052";
+                    const address = "0xaE7B7B402946f2bB36bDe3D3A06A63b55FedAb04";
 
                     window.web3 = await new Web3(window.ethereum);
                     window.contract = await new web3.eth.Contract(ABI, address);
